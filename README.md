@@ -1,6 +1,6 @@
 # Mouseless
 
-A simple Rust application to control your mouse cursor using vim-like HJKL keys.
+A simple Rust application to control your mouse cursor using upper-HJKL keys.
 
 ## Prerequisites
 
@@ -23,14 +23,14 @@ cargo run
 ```
 
 Controls (hold `q` to activate):
-- `u` - move cursor left
-- `i` - move cursor down
-- `o` - move cursor up
-- `p` - move cursor right
+- `y` - move cursor left
+- `u` - move cursor down
+- `i` - move cursor up
+- `o` - move cursor right
 - `c` - left click
 - `v` - right click
-- `e` + movement keys - precise 1px movement
+- `e` + movement keys - precise 2px movement
 - `Esc` - exit program
 
 Hold the `q` key while pressing any of the above keys to control the mouse. Release `q` to type normally.
-Hold `e` while moving (with q still held) for precise 2-pixel movements instead of the default 10-pixel movements.
+Hold `e` while moving (with q still held) for precise 2-pixel movements instead of the default 15-pixel movements.

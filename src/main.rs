@@ -37,7 +37,7 @@ fn main() {
                     Keycode::U => enigo.mouse_move_relative(0, move_amount),
                     Keycode::I => enigo.mouse_move_relative(0, -move_amount),
                     Keycode::O => enigo.mouse_move_relative(move_amount, 0),
-                    Keycode::C | Keycode::Space => enigo.mouse_click(MouseButton::Left),
+                    Keycode::C => enigo.mouse_click(MouseButton::Left),
                     Keycode::V => enigo.mouse_click(MouseButton::Right),
                     _ => {}
                 }
