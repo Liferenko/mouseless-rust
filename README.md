@@ -23,14 +23,14 @@ cargo run
 ```
 
 Controls (hold `q` to activate):
-- `h` - move cursor left
-- `j` - move cursor down
-- `k` - move cursor up
-- `l` - move right
-- `u` or `Space` - left click
-- `i` - right click
-- `w` + movement keys - precise 1px movement
+- `u` - move cursor left
+- `i` - move cursor down
+- `o` - move cursor up
+- `p` - move cursor right
+- `c` - left click
+- `v` - right click
+- `e` + movement keys - precise 1px movement
 - `Esc` - exit program
 
 Hold the `q` key while pressing any of the above keys to control the mouse. Release `q` to type normally.
-Hold `w` while moving (with q still held) for precise 1-pixel movements instead of the default 10-pixel movements.
+Hold `e` while moving (with q still held) for precise 2-pixel movements instead of the default 10-pixel movements.

@@ -2,7 +2,7 @@ use device_query::{DeviceQuery, DeviceState, Keycode};
 use enigo::{Enigo, MouseControllable, MouseButton};
 use std::{thread, time::Duration};
 
-const NORMAL_MOVE: i32 = 10;
+const NORMAL_MOVE: i32 = 15;
 const PRECISE_MOVE: i32 = 2;
 
 fn main() {
@@ -11,10 +11,10 @@ fn main() {
 
     println!("Mouseless started!");
     println!("Hold 'q' and use:");
-    println!("u - move left");
-    println!("i - move down");
-    println!("o - move up");
-    println!("p - move right");
+    println!("y - move left");
+    println!("u - move down");
+    println!("i - move up");
+    println!("o - move right");
     println!("c - left click");
     println!("v - right click");
     println!("Hold 'e' with movement keys for precise 1px movement");
@@ -33,10 +33,10 @@ fn main() {
 
             for key in keys.iter() {
                 match key {
-                    Keycode::U => enigo.mouse_move_relative(-move_amount, 0),
-                    Keycode::I => enigo.mouse_move_relative(0, move_amount),
-                    Keycode::O => enigo.mouse_move_relative(0, -move_amount),
-                    Keycode::P => enigo.mouse_move_relative(move_amount, 0),
+                    Keycode::Y => enigo.mouse_move_relative(-move_amount, 0),
+                    Keycode::U => enigo.mouse_move_relative(0, move_amount),
+                    Keycode::I => enigo.mouse_move_relative(0, -move_amount),
+                    Keycode::O => enigo.mouse_move_relative(move_amount, 0),
                     Keycode::C | Keycode::Space => enigo.mouse_click(MouseButton::Left),
                     Keycode::V => enigo.mouse_click(MouseButton::Right),
                     _ => {}
