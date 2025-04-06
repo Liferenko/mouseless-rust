@@ -34,3 +34,11 @@ Controls (hold `q` to activate):
 
 Hold the `q` key while pressing any of the above keys to control the mouse. Release `q` to type normally.
 Hold `e` while moving (with q still held) for precise 2-pixel movements instead of the default 15-pixel movements.
+
+## TODO:
+- [x] remap Esc to better key
+- [ ] lock keys to prevent unneccesary actions in the applications
+- [x] remap left click and right click
+- [ ] add vertical scroll
+- [ ] check how dragging works
+- [ ] add smooth movement (longer key press = faster movement)
